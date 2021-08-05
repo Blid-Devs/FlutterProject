@@ -1,6 +1,19 @@
 import 'package:blid/shared/themes/app_colors.dart';
 import 'package:blid/shared/themes/app_images.dart';
 import 'package:flutter/material.dart';
+
+class TelaInformacoes extends StatefulWidget {
+  const TelaInformacoes({Key? key}) : super(key: key);
+
+  @override
+  _TelaInformacoesState createState() => _TelaInformacoesState();
+}
+
+class _TelaInformacoesState extends State<TelaInformacoes> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: AppColors.background,
       appBar: AppBar(
         title: Text('I N F O R M A Ç Õ E S',
             style: TextStyle(color: AppColors.azulEscuro)),
