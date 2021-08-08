@@ -18,4 +18,9 @@ class AppColors {
       Color(0XFF8095AA); //Textos dentro dos widgets dos dados pessoais
   static final Branco = Color(0XFFFFFFFF); //Texto carteira de vacinação
   static final verde = Color(0XFF56D142);
+  static final buttonlogin = Color(0xFF415778); //Botão Já sou doador
+  static final fontlogin = Color(0xFF93AACD); //Fonte do botão login
+  static final buttonregistro = Color(0xFF93AACD); //Botão Quero Ser doador
+  static final fontregistro = Color(0xFF415778); //Fonte do botão registro
+  static final fontbemvindo = Color(0xFF1A558C); //Fonte de Bem vindo
 }
