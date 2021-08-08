@@ -1,5 +1,6 @@
-import 'package:blid/modules/Informacoes/Informacoes.dart';
 import 'package:flutter/material.dart';
+
+import 'modules/BemVindo/bemvindo.dart';
 
 void main() {
   runApp(BlidApp());
@@ -15,7 +16,7 @@ class BlidApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: TelaInformacoes(),
+      home: TelaBemVindo(),
     );
   }
 }
