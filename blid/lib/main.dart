@@ -1,6 +1,8 @@
 import 'package:blid/modules/Informacoes/Informacoes.dart';
 import 'package:flutter/material.dart';
 
+import 'modules/tela_inicial/tela_inicial.dart';
+
 void main() {
   runApp(BlidApp());
 }
@@ -11,11 +13,11 @@ class BlidApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Informações',
+      title: 'Home Page',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: TelaInformacoes(),
+      home: TelaInicial(),
     );
   }
 }
