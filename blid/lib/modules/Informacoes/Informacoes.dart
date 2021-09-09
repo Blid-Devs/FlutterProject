@@ -153,6 +153,37 @@ class _TelaInformacoesState extends State<TelaInformacoes> {
                   color: AppColors.Branco,
                   image: DecorationImage(
                     image: AssetImage(
+                      AppImages.Marrow,
+                    ),
+                    scale: 9,
+                    alignment: Alignment.centerLeft,
+                  ),
+                  boxShadow: [
+                    BoxShadow(
+                        color: Color(0xFF40000000),
+                        offset: Offset(0, 1),
+                        blurRadius: 4)
+                  ]),
+              child: Center(
+                child: Text(
+                  "Doação de Medula",
+                  style: TextStyle(
+                      color: Color(0xFF49465B),
+                      fontFamily: 'Roboto',
+                      fontSize: 15,
+                      fontWeight: FontWeight.normal,
+                      height: 1.5),
+                ),
+              ),
+            ),
+            Container(
+              height: 100,
+              width: double.infinity,
+              margin: EdgeInsets.only(bottom: 14, left: 18, right: 18),
+              decoration: BoxDecoration(
+                  color: AppColors.Branco,
+                  image: DecorationImage(
+                    image: AssetImage(
                       AppImages.Writing,
                     ),
                     alignment: Alignment.centerLeft,

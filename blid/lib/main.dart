@@ -1,3 +1,8 @@
+<<<<<<< Updated upstream
+=======
+import 'package:blid/modules/Informacoes/Informacoes.dart';
+import 'package:blid/modules/Informacoes/Informacoes2.dart';
+>>>>>>> Stashed changes
 import 'package:flutter/material.dart';
 
 import 'modules/BemVindo/bemvindo.dart';
@@ -16,7 +21,11 @@ class BlidApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
+<<<<<<< Updated upstream
       home: TelaBemVindo(),
+=======
+      home: MyApp(),
+>>>>>>> Stashed changes
     );
   }
 }

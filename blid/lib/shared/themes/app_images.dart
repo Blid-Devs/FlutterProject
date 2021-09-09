@@ -15,5 +15,9 @@ class AppImages {
       "assets/images/erythrocytes.png"; // Glóbulos vermelhos, Hemácias
   static const Contacts = "assets/images/communicate.png"; // Contatos
   static const Writing = "assets/images/writing.png"; //Folha de documentos
+<<<<<<< Updated upstream
   static const testeDoctors = "assets/images/bem-vindo.png";
+=======
+  static const Marrow = "assets/images/bone-marrow.png"; //medula
+>>>>>>> Stashed changes
 }
