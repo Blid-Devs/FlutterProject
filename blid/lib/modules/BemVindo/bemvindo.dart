@@ -15,115 +15,67 @@ class _TelaBemVindoState extends State<TelaBemVindo> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: <Widget>[
-          /*Container - para poder manipular o tamanho e a localização da imagem*/
-          Container(
-            child: Image(
-              image: AssetImage("Images/top-decoration-wave.png"), // Imagem
-              alignment: Alignment.topRight, //Lugar onde a imagem vai ficar
-              height: 150.0, // Altura
-              width: 400.0, // Largura
-            ),
-          ),
-          Image.asset(AppImages.Doctors), // Imagem dos doutores
-          Text(
-            "BEM VINDO(A)!",
-            style: TextStyle(
-              //Estilo do Texto
-              fontFamily: 'Roboto', // Fonte do Texto
-              fontSize: 35, // Tamanho da fonte
-              fontWeight: FontWeight.bold, // Fonte em negrito
-              color: AppColors.fontbemvindo, // Cor da fonte
-            ),
-          ),
-          Text(
-            "\nBem Vindo(a) ao app Blid!",
-            style: TextStyle(
-              //Estilo do Texto
-              fontFamily: 'Roboto', // Fonte do Texto
-              fontSize: 15, // Tamanho da fonte
-              fontWeight: FontWeight.bold, // Fonte em negrito
-              color: AppColors.fontbemvindo, // Cor da fonte
-            ),
-          ),
-          Text(
-            "\n    Acompanhe as necessidades do banco de \n  sangue, saiba o que é permitido ou não antes \n    de doar sangue, quais as documentações \n necessárias, entre muitas outras informações. \n \n    Tudo pensado exclusivamente para facilitar \n                                seu dia a dia. \n", // Texto do corpo da página
-            style: TextStyle(
-              //Estilo do Texto
-              fontSize: 14, // Tamanho da fonte
-              fontFamily: 'Roboto', // Fonte do Texto
-            ),
-          ),
-          ElevatedButton(
-            // Botão já sou doador que envia para a tela de Login
-            child: Text(
-              // Texto do Botão
-              'Já sou doador',
+      body: Center(
+        child: Column(
+          children: <Widget>[
+            Image.asset(AppImages.testeDoctors),
+            Text(
+              "BEM VINDO(A)!",
               style: TextStyle(
-                  color: AppColors.fontlogin,
-                  fontSize: 20), // Cor e tamanho da fonte
-            ),
-            style: ElevatedButton.styleFrom(
-              // Style do botão
-              primary: AppColors.buttonlogin, // Cor do botão
-              minimumSize: Size(244, 44), // Tamanho do Botão
-              shape: RoundedRectangleBorder(
-                // Borda redonda
-                borderRadius: BorderRadius.circular(
-                    20), // O quanto quer o botão arredondado
+                fontFamily: 'Roboto',
+                fontSize: 35,
+                fontWeight: FontWeight.bold,
+                color: AppColors.fontbemvindo,
               ),
             ),
-            onPressed: () {
-              // O que acontece se o botão for pressionado
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                    builder: (context) =>
-                        Login()), // Quando o botão é clicado o usuário é enviado para a tela de Login
-              );
-            },
-          ),
-          Text('\t'), // Espaço entre uim botão e outro
-          ElevatedButton(
-            // Botão de quero ser doador
-            child: Text(
-              //Estilo do Texto
-              'Quero ser doador',
+            Text(
+              "\nLorem ipsum dolor sit amet, consectetur adipiscing elit. \nSollicitudin malesuada quam egestas est.\n",
               style: TextStyle(
-                  color: AppColors.fontregistro,
-                  fontSize: 20), // Cor e tamanho da fonte
-            ),
-            style: ElevatedButton.styleFrom(
-              // Style do botão
-              primary: AppColors.buttonregistro, // Cor do botão
-              minimumSize: Size(244, 44), // Tamanho do Botão
-              shape: RoundedRectangleBorder(
-                // Borda redonda
-                borderRadius: BorderRadius.circular(
-                    25), // O quanto quer o botão arredondado
+                fontSize: 15,
+                fontFamily: 'Roboto',
               ),
             ),
-            onPressed: () {
-              // O que acontece se o botão for pressionado
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                    builder: (context) =>
-                        Registro()), // Quando o botão é clicado o usuário é enviado para a tela de Registro
-              );
-            },
-          ),
-          /*Container - para poder manipular o tamanho e a localização da imagem*/
-          Container(
-            child: Image(
-              image: AssetImage("Images/bottom-decoration-wave.png"), // Imagem
-              alignment: Alignment.topLeft, //Lugar onde a imagem vai ficar
-              height: 150.0, // Altura
-              width: 400.0, // Largura
+            ElevatedButton(
+              child: Text(
+                'Já sou doador',
+                style: TextStyle(color: AppColors.fontlogin, fontSize: 20),
+              ),
+              style: ElevatedButton.styleFrom(
+                primary: AppColors.buttonlogin,
+                minimumSize: Size(244, 44),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(20),
+                ),
+              ),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Login()),
+                );
+              },
             ),
-          ),
-        ],
+            Text('\t'),
+            ElevatedButton(
+              child: Text(
+                'Quero ser doador',
+                style: TextStyle(color: AppColors.fontregistro, fontSize: 20),
+              ),
+              style: ElevatedButton.styleFrom(
+                primary: AppColors.buttonregistro,
+                minimumSize: Size(244, 44),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(25),
+                ),
+              ),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Registro()),
+                );
+              },
+            ),
+          ],
+        ),
       ),
     );
   }
