@@ -18,7 +18,7 @@ class _TelaBemVindoState extends State<TelaBemVindo> {
       body: Center(
         child: Column(
           children: <Widget>[
-            Image.asset(AppImages.testeDoctors),
+            Image.asset(AppImages.Doctors),
             Text(
               "BEM VINDO(A)!",
               style: TextStyle(

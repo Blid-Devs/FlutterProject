@@ -1,5 +1,5 @@
-import 'package:blid/modules/Informacoes/Informacoes.dart';
-import 'package:blid/modules/tela_inicial/tela_inicial.dart';
+import 'package:blid/modules/Informacoes/telaInformacoes.dart';
+import 'package:blid/modules/telaInicial/telaInicial.dart';
 import 'package:blid/shared/themes/app_colors.dart';
 import 'package:blid/shared/themes/app_images.dart';
 import 'package:flutter/material.dart';
@@ -143,7 +143,7 @@ class MenuLateral extends StatelessWidget {
         break;
       case 3:
         Navigator.of(context).push(MaterialPageRoute(
-          builder: (context) => TelaInformacoes(),
+          builder: (context) => Informacoes(),
         ));
         break;
       case 4:
