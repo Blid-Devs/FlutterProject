@@ -1,4 +1,4 @@
-import 'package:blid/shared/menu_lateral/menu_lateral.dart';
+import 'package:blid/modules/menuLateral/menu_lateral.dart';
 import 'package:blid/shared/themes/app_colors.dart';
 import 'package:blid/shared/themes/app_images.dart';
 import 'package:flutter/material.dart';
@@ -17,8 +17,13 @@ class _TelaIinicialState extends State<TelaInicial> {
       backgroundColor: AppColors.background,
       drawer: MenuLateral(),
       appBar: AppBar(
-        title:
-            Text('Tela Inicial', style: TextStyle(color: AppColors.azulEscuro)),
+        title: Text(
+          'Tela Inicial',
+          style: TextStyle(
+            color: AppColors.azulEscuro,
+            fontWeight: FontWeight.bold, // Fonte em negrito
+          ),
+        ),
         elevation: 0,
         centerTitle: true,
         backgroundColor: AppColors.widgets,
