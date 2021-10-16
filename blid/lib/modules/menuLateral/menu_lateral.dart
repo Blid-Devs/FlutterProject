@@ -1,3 +1,4 @@
+import 'package:blid/modules/BemVindo/bemvindo.dart';
 import 'package:blid/modules/Informacoes/telaInformacoes.dart';
 import 'package:blid/modules/telaInicial/telaInicial.dart';
 import 'package:blid/shared/themes/app_colors.dart';
@@ -153,7 +154,7 @@ class MenuLateral extends StatelessWidget {
         break;
       case 5:
         Navigator.of(context).push(MaterialPageRoute(
-          builder: (context) => TelaInicial(),
+          builder: (context) => TelaBemVindo(),
         ));
         break;
     }
