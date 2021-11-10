@@ -15,4 +15,7 @@ class AppImages {
       "assets/images/erythrocytes.png"; // Glóbulos vermelhos, Hemácias
   static const Contacts = "assets/images/communicate.png"; // Contatos
   static const Writing = "assets/images/writing.png"; //Folha de documentos
+
+  static const cv = "assets/images/conecta_vidas.jpg"; //Logo do App
+  static const co = "assets/images/CareOn.jpg"; //Logo da Empresa
 }

@@ -11,7 +11,7 @@ class BlidApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Informações',
+      title: 'Home Page',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
